@@ -1,0 +1,203 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    background-color: #0a0f28;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #1b1f3a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: 50px;
+    max-width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #f9a825;
+}
+
+.search input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #f9a825;
+    outline: none;
+}
+
+.search button {
+    padding: 8px 16px;
+    background-color: #f9a825;
+    color: #1b1f3a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.search button:hover {
+    background-color: #f57f17;
+}
+
+/* Section Styling */
+section {
+    padding: 50px 10px;
+    text-align: center;
+    background-color: #272c4a;
+    margin: 20px 0;
+    border-radius: 10px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+section:hover {
+    background-color: #3b4c80;
+}
+
+h2 {
+    color: #f9a825;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+p, li {
+    color: #ffffff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* Home Section */
+#home img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#home video {
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+#contact p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1b1f3a;
+    color: #ffffff;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer p:first-child {
+    margin-bottom: 10px;
+}
+
+footer p:last-child {
+    font-size: 1rem;
+}
+
+/* Hover Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .search {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    ul li {
+        font-size: 0.9rem;
+    }
+
+    #home img, #home video {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
